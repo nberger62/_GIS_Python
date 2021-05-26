@@ -1,7 +1,7 @@
 ###################################
-# Script: Mod2
+# Script: Mod2_Script2_NAB.py
 # Name: Nathan Berger
-# Contact email: nab45
+# Contact email: nab45@students.uwf.edu
 # Date: 5/25/2021
 ###################################
 
