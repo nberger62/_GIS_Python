@@ -8,7 +8,7 @@
 # Description:
 ##################################################
 
-
+print("Step 1")
 ## Step 1 -> Print your last name from a created list
 
 #### Step 1.1: Assign your full name, as a string, to a variable
@@ -30,6 +30,8 @@ print(nameList)
 print(nameList[2])
 
 # Berger
+
+print("Step 2")
 
 ## Step 2 -> Fix established code for dice game
 
@@ -69,7 +71,7 @@ for p in players:
 # Marceline wins!
 
 
-
+print("Step 3")
 ## Step 3: Create a loop that adds 20 random numbers between 0 and 10 to a list.
 
 #### Step 3.1: Create an empty list
@@ -97,6 +99,7 @@ print(randomNumbers)
 
 # [10, 7, 2, 3, 3, 0, 5, 10, 6, 10, 1, 9, 0, 1, 10, 10, 6, 4, 2, 8]
 
+print("Step 4")
 ## Step 4: Create a loop that removes an unlucky number from the list generated
 ##         in step 3. 
 
