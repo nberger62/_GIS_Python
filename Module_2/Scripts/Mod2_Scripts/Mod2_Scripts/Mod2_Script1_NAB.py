@@ -14,7 +14,7 @@ fields = arcpy.ListFields(fc)
 for field in fields:
     print("Name = {0}".format(field.name))
 
-# Output is below
+# Results is below
 
 
 # Name = FID

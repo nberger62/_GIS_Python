@@ -1,2 +1,6 @@
 ﻿arcpy.GetMessages(2)
 arcpy.GetMessages(1)
+import arcpy
+import numpy
+x = 3
+print(x)
