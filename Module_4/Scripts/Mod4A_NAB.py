@@ -66,9 +66,9 @@ with arcpy.da.SearchCursor(fc, fields, where) as cursor:
     # Print the cities we are iterating over with other metadata
     for row in cursor:
         county_seats[row[0]] = row[2]
-        print("City Name: ")
-        print("Feature Type: ")
-        print("Population circa 2000: ")
+        print("City Name: " + str(row[0]))
+        print("Feature Type: " + str(row[1]))
+        print("Population circa 2000: " + str(row[2]))
         print("\n")
 
     # Print populated dictionary
