@@ -3,7 +3,12 @@
 # Script Name: Mod4A_NAB.py
 # Class: GIS Programming
 # Date: 6/07/2021
-# Script Description:
+# Script Description: This script creates a new file geodatabase,
+# then copies all of the data from one folder into the geodatabase,
+# then we iterate through the cities point layer for cities that are county Seats with a for loop,
+# and we search for those cities.
+# We then print them out with the city name, county seat field attribute,
+# and the population of that city.
 
 # Import modules and classes, and set overwriteOutput
 print("Importing modules! Let's get this party started :)")
