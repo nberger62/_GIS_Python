@@ -25,7 +25,7 @@ print("The spatial reference for this project is " + spatialRef.name + ".\n")
 for m in maps:
     print("This Project's Map contains the following layers: ")
     for lyr in m.listLayers():
-        print("This layer's name is called " + str(lyr.name))
+        print("This layer's name is called " + str(lyr.name))-
 
 
 # save Project
