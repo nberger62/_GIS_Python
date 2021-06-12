@@ -3,12 +3,12 @@
 # Script Name: Mod4A_NAB.py
 # Class: GIS Programming
 # Date: 6/07/2021
-# Script Description: This script creates a new file geodatabase,
-# then copies all of the data from one folder into the geodatabase,
-# then we iterate through the cities point layer for cities that are county Seats with a for loop,
-# and we search for those cities.
-# We then print them out with the city name, county seat field attribute,
-# and the population of that city.
+        # Script Description: This script creates a new file geodatabase,
+        # then copies all of the data (shapefiles) from one folder into the geodatabase,
+        # then we iterate through the cities point layer for cities that are county Seats with a for loop,
+        # and we search for those cities.
+        # We then print them out with the city name, county seat field attribute,
+        # and the population of that city.
 
 # Import modules and classes, and set overwriteOutput
 print("Importing modules! Let's get this party started :)")
@@ -69,6 +69,7 @@ with arcpy.da.SearchCursor(fc, fields, where) as cursor:
     print("Iterating Over Cursor Now...")
     print("\n")
     # Print the cities we are iterating over with other metadata
+
     for row in cursor:
         county_seats[row[0]] = row[2]
         print("City Name: " + str(row[0]))
@@ -85,15 +86,9 @@ with arcpy.da.SearchCursor(fc, fields, where) as cursor:
     print("Dictionary complete! See the completed results below...")
     print(arcpy.GetMessages() + "\n")
     print(county_seats)
+    print(county_seats["Las Vegas"])
 
 del cursor
 
-# element = “whatever your feature class is”
-# desc = arcpy.da.Describe(element)
-# print (“Name: “ + desc[“name”])
-# print (“Data type: “ + desc[“dataType”])
-# print (“Population circa 2000: “ + desc[“whatever the attribute is called here”])
 
 
-#for field in fields:
-# print("Name = {0}".format(field.name))
