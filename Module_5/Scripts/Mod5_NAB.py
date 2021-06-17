@@ -72,5 +72,5 @@ with (arcpy.da.SearchCursor(infc, ["OID@", "NAME", "SHAPE@"])) as cursor:
 print("\n")
 print("All the rivers have been copied over from the rivers shapefile to the rivers text file! Awesome Work!")
 ## Step 4: Close the .txt file and delete row and cursor variables outside of all loops. ##
-del cursor
+del cursor, row
 riversTxt.close()
